@@ -1,0 +1,90 @@
+/* Basic styling reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+h1 {
+    color: #2a7de1;
+    margin-bottom: 20px;
+    text-align: center;
+
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+select, input[type="text"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+select, input[type="text"] {
+    background-color: #fafafa;
+
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+input[type="submit"] {
+    background-color: #2a7de1;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+input[type="submit"]:hover {
+    background-color: #1f5bb5;
+
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+}
