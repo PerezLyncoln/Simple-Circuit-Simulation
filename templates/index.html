@@ -10,10 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <!-- Form header -->
     <h1>Circuit Simulator</h1>
+
     <!-- Form -->
     <form action="/plot" method="post">
         <label for="circuit_type">Choose circuit type:</label>
@@ -21,13 +23,27 @@
             <option value="series">Series</option>
             <option value="parallel">Parallel</option>
         </select>
+
         <br><br>
         <label for="resistances">Enter resistances (comma-separated):</label>
         <input type="text" name="resistances" id="resistances" placeholder="e.g., 5, 10, 15">
         <br><br>
+        
         <input type="submit" value="Draw Circuit">
     </form>
+
+    <br> 
+    <!-- Error message -->
+    {% if error %}
+        <p style="color: red; font-weight: bold;">{{ error }}</p>
+    {% endif %}
+
     <br>
-    <img src="/plot" alt="Circuit Plot">
+    <script>
+        document.getElementById("circuit-image").onload = function() {
+            this.classList.remove("hidden");
+        };
+    </script>
+    
 </body>
 </html>

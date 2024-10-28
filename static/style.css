@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-    color: #2a7de1;
+    color: #019e01;
     margin-bottom: 20px;
     text-align: center;
 
@@ -63,7 +63,7 @@ select, input[type="text"] {
 }
 
 input[type="submit"] {
-    background-color: #2a7de1;
+    background-color: #019e01;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -74,7 +74,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #1f5bb5;
+    background-color: #019e01;
 
     font-family: "Poppins", serif;
     font-weight: 600;
